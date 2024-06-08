@@ -90,6 +90,9 @@ input[type="submit"]:hover {
     padding: 5px;
     border-bottom: 1px solid #ddd;
 }
+.ope {
+    color: #83838388;
+}
 
 @media (min-width: 600px) {
     .main-box {
