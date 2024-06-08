@@ -1,88 +1,103 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+ /* Reset some basic elements for consistency across browsers */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Main Container */
-.main-box {
-    display: flex;
-    /* width: 100%; */
-    flex-direction: grid;
-   
-    margin: auto;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 50%;
-    /* width: 100%; */
-    box-sizing: border-box;
-}
-.outbox{
-    /* width: 340px; */
-    max-width: 45%;
-}
-.outbox{
-    width: 380px;
-   
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #f4f4f4;
 }
 
-/* Input Section */
-.input-p {
+/* Main container styling */
+.main-box {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling */
+ 
+  .outbox {
+    width: 100%;
     margin-bottom: 20px;
 }
 
-.input-p h2 {
-    margin-bottom: 15px;
+h2 {
     font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
     color: #333;
 }
 
-.input-p input,
-.input-p textarea {
+/* Form elements styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    font-size: 1em;
 }
 
-.input-p input[type="submit"] {
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
     background-color: #007BFF;
-    color: white;
     border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.input-p input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/* Output Section */
-.outbox {
-    margin-top: 20px;
-}
-
-.outputt {
-    background-color: #f1f1f1;
+/* Output section styling */
+.outbox .outputt {
+    background-color: #f9f9f9;
     padding: 10px;
-    border-radius: 4px;
     border: 1px solid #ddd;
-}
-
-.outputt .pr {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
     border-radius: 4px;
 }
-#otproject{
-     overflow: scroll;
+
+.outbox .pr {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (min-width: 600px) {
+    .main-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input-p, .outbox {
+        width: 48%;
+    }
 }
