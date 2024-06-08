@@ -1,1 +1,88 @@
-{\rtf1}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.main-box {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: grid;
+   
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 50%;
+    /* width: 100%; */
+    box-sizing: border-box;
+}
+.outbox{
+    /* width: 340px; */
+    max-width: 45%;
+}
+.outbox{
+    width: 380px;
+   
+}
+
+/* Input Section */
+.input-p {
+    margin-bottom: 20px;
+}
+
+.input-p h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.input-p input,
+.input-p textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-p input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-p input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Output Section */
+.outbox {
+    margin-top: 20px;
+}
+
+.outputt {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.outputt .pr {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#otproject{
+     overflow: scroll;
+}

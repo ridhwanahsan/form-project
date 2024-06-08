@@ -6,35 +6,36 @@
     <title>JavaScript test</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body
+<body> 
+ 
+<section class="main-box">
+    <section class="input-p">
+        <h2> Form Preview Live</h2>
+        <label for="text">Type your Name</label>
+        <input type="text" id="tbuser" placeholder=" Type your Name" maxlength=""  >
+        <label for="mail">Add Your Mail</label>
+        <input type="email" name="email" id="mail" placeholder="Add Your Mail"  >
+        <label for="project">Project Details</label>
+        <textarea name="text" id="project" placeholder="Project Details"></textarea>
+        <label for="number">Add Your Number</label>
+        <input type="number" name="number" id="num">
+        
 
+        <input type="submit" id="btn1" id="btn" value="Click Me"  >
+    </section>
+<section class="outbox">
+    <h2>Live Data </h2>
+    <div class="outputt">
+        <p id="output1" class="pr"></p>
+        <p id="outmail" class="pr"></p>
+        <p id="otproject" class="pr"></p>
+        <p id="outnum" class="pr"></p>
+    </div>
+</section>
+</section>
 
-    <article class="regular">
-    <h2> Form Live Preview Project</h2>
+    <script src="script.js"></script>
 
-    <label for="tbuser">Username:</label>
-
-    <input type="text" id="tbuser" placeholder="Enter Username" maxlength="">
-
-    <input type="button" id="btn1" id="btn" value="Click Me">
-
-    <p id="output1"></p>
-    </article>
-
-
-    <script>
-    const txt1 = document.getElementById('tbuser');
-    const btn1 = document.getElementById('btn1'); const out1 = document.getElementById
-    ('output1');
-
-    
-
-    function fun1() {
-        out1.innerHTML = txt1.value;
-    
-    }
-    btn1.addEventListener('click', fun1);
-    </script>
   
 </body>
 </html>
