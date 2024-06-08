@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body
+
+
+    <article class="regular">
+    <h2>Textbox</h2>
+
+    <label for="tbuser">Username:</label>
+
+    <input type="text" id="tbuser" placeholder="Enter Username" maxlength="">
+
+    <input type="button" id="btn1" id="btn" value="Click Me">
+
+    <p id="output1"></p>
+    </article>
+
+
+    <script>
+    const txt1 = document.getElementById('tbuser');
+    const btn1 = document.getElementById('btn1'); const out1 = document.getElementById
+    ('output1');
+
+    
+
+    function fun1() {
+        out1.innerHTML = txt1.value;
+    
+    }
+    btn1.addEventListener('click', fun1);
+    </script>
+  
+</body>
+</html>
