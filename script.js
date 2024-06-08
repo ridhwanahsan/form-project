@@ -1,4 +1,4 @@
-const txt1 = document.getElementById('tbuser');
+const txt1 = document.getElementById('user');
 const mail = document.getElementById('mail');
  const proj = document.getElementById('project');
  const number = document.getElementById('num')
